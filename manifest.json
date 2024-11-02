@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
     "name": "YT Bookmarker",
-    "verison": "1.0.0",
+    "version": "0.1.0",
     "description": "Save timestamps from YouTube videos",
     "permissions": ["tabs", "storage"],
     "host_permissions": ["https://*.youtube.com/*"],
     "background": {
-        "service_worker": "background.js"
+      "service_worker": "background.js"
     },
     "content_scripts": [
         {
@@ -14,13 +14,13 @@
             "js": ["contentScripts.js"]
         }
     ],
-    "actions": {
-        "defualt_icons": {
-            "16": "assests/ext-icon.png",
+    "action": {
+        "default_icons": {
+            "16": "assets/ext-icon.png",
             "24": "assets/ext-icon.png",
             "32": "assets/ext-icon.png"
         },
         "default_title": "YT Bookmarker",
-        "default_pop": "popup.html"
+        "default_popup": "popup.html"
     }
 }
